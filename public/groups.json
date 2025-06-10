@@ -448,6 +448,10 @@
         {
           "path": "json/right_option_debug_various_ides.json",
           "extra_description_path": "extra_descriptions/right_option_debug_various_ides.html"
+        },
+        {
+          "path": "json/right_control_debug_various_ides.json",
+          "extra_description_path": "extra_descriptions/right_control_debug_various_ides.html"
         }
       ]
     },

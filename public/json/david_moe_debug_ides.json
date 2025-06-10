@@ -1,0 +1,150 @@
+{
+    "title": "David's Debug in Various IDEs",
+    "description": "",
+    "author": "Aung David Moe",
+    "maintainers": ["logicxd"],
+    "rules": [
+        {
+            "description": "(Right Control or Right Option) + C -> Code Usages",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.jetbrains\\.intellij$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": { "mandatory": ["right_control"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "h",
+                            "modifiers": ["left_control", "left_command", "left_shift"]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.jetbrains\\.intellij$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "c",
+                        "modifiers": { "mandatory": ["right_option"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "h",
+                            "modifiers": ["left_control", "left_command", "left_shift"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "(Right Control or Right Option) + B -> Re-run Last Build/Test",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.jetbrains\\.intellij$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "b",
+                        "modifiers": { "mandatory": ["right_control"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "d",
+                            "modifiers": ["left_control"]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.jetbrains\\.intellij$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "b",
+                        "modifiers": { "mandatory": ["right_option"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "d",
+                            "modifiers": ["left_control"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "(Right Control or Right Option) + Delete -> Rename",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.jetbrains\\.intellij$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": { "mandatory": ["right_control"] }
+                    },
+                    "to": [
+            {
+                            "key_code": "f6",
+                            "modifiers": ["left_shift"]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.jetbrains\\.intellij$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": { "mandatory": ["right_option"] }
+                    },
+                    "to": [
+                        {
+                            "key_code": "f6",
+                            "modifiers": ["left_shift"]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+    
+}

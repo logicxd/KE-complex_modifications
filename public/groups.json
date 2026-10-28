@@ -241,6 +241,10 @@
           "extra_description_path": "extra_descriptions/caps_lock_debug_various_ides.html"
         },
         {
+          "path": "json/david_moe_custom_settings.json",
+          "extra_description_path": "extra_descriptions/david_moe_custom_settings.html"
+        },
+        {
           "path": "json/citrix_ctrl_alt_win.json",
           "extra_description_path": "extra_descriptions/citrix.html"
         },
